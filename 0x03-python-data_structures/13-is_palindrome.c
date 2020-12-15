@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 {
 	int i;
 	int j;
+	listint_t *mypointer;
 	int myarray[100];
 
 	i = j = 0;
@@ -18,10 +19,11 @@ int is_palindrome(listint_t **head)
 	return (1);
 	if ((*head)->next == NULL)
 	return (1);
-	while (*head)
+	mypointer = *head;
+	while (mypointer)
 	{
-		myarray[j] = (*head)->n;
-		*head = (*head)->next;
+		myarray[j] = mypointer->n;
+		mypointer = mypointer->next;
 		j++;
 	}
 	j--;
