@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# prints all integers in a list
+# Prints all integers in a list
 
 
 def print_list_integer(my_list=[]):
