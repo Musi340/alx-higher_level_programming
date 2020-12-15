@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 {
 	int i;
 	int j;
+	listint_t *mypointer;
 	int myarray[10000];
 
 	i = j = 0;
