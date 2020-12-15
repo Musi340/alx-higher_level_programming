@@ -17,9 +17,10 @@ int is_palindrome(listint_t **head)
 	i = j = 0;
 	if ((!*head) || (!head))
 	return (1);
-	if ((*head)->next == NULL)
-	return (1);
 	mypointer = *head;
+	if (mypointer->next == NULL)
+	return (1);
+	
 	while (mypointer)
 	{
 		myarray[j] = mypointer->n;
