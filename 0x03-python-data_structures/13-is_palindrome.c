@@ -11,24 +11,24 @@ int is_palindrome(listint_t **head)
 {
 	int i;
 	int j;
-	listint_t *mypointer;
+	int k;
 	int myarray[10000];
 
 	i = j = 0;
-	if ((!*head) || (!head))
+	if (head == NULL)
 	return (1);
-	mypointer = *head;
-	if (mypointer->next == NULL)
+	(*head) = *head;
+	if ((*head)->next == NULL)
 	return (1);
-	
-	while (mypointer)
+	while (*head)
 	{
-		myarray[j] = mypointer->n;
-		mypointer = mypointer->next;
+		myarray[j] = (*head)->n;
+		*head = (*head)->next;
 		j++;
 	}
 	j--;
-	while (j >= 0 && i <= j)
+	k = j / 2;
+	while (i <= k)
 	{
 		if (myarray[i] == myarray[j])
 		{
