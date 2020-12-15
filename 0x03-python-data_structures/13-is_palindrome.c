@@ -14,15 +14,16 @@ int is_palindrome(listint_t **head)
 	int myarray[10000];
 
 	i = j = 0;
-	if (head == NULL)
+	if (head == NULL || *head == NULL)
 	return (1);
-	(*head) = *head;
-	if ((*head)->next == NULL)
+	mypointer = *head;
+	if (mypointer->next == NULL)
 	return (1);
-	while (*head)
+	
+	while (mypointer)
 	{
-		myarray[j] = (*head)->n;
-		*head = (*head)->next;
+		myarray[j] = mypointer->n;
+		mypointer = mypointer->next;
 		j++;
 	}
 	j--;
