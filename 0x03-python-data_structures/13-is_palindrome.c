@@ -15,7 +15,7 @@ int is_palindrome(listint_t **head)
 	int myarray[1000];
 
 	i = j = 0;
-	if (head == NULL || *head == NULL)
+	if ((!*head) || (!head))
 	return (1);
 	if ((*head)->next == NULL)
 	return (1);
