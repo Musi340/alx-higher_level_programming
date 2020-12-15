@@ -12,7 +12,7 @@ int is_palindrome(listint_t **head)
 	int i;
 	int j;
 	listint_t *mypointer;
-	int myarray[100];
+	int myarray[1000];
 
 	i = j = 0;
 	if (head == NULL || *head == NULL)
