@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 {
 	int i;
 	int j;
+	int k;
 	listint_t *mypointer;
 	int myarray[10000];
 
@@ -28,7 +29,8 @@ int is_palindrome(listint_t **head)
 		j++;
 	}
 	j--;
-	while (j >= 0 && i <= j)
+	k = j / 2;
+	while (i < k)
 	{
 		if (myarray[i] == myarray[j])
 		{
