@@ -25,7 +25,7 @@ int is_palindrome(listint_t **head)
 		j++;
 	}
 	j--;
-	while (i >= 0 && i <= j)
+	while (j >= 0 && i <= j)
 	{
 		if (myarray[i] == myarray[j])
 		{
