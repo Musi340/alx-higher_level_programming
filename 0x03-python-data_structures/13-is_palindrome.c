@@ -11,12 +11,12 @@ int is_palindrome(listint_t **head)
 {
 	int i;
 	int j;
-	int k;
 	int myarray[100];
 
-	i = 0;
-	j = 0;
+	i = j = 0;
 	if (head == NULL || *head == NULL)
+	return (1);
+	if ((*head)->next == NULL)
 	return (1);
 	while (*head)
 	{
@@ -25,8 +25,7 @@ int is_palindrome(listint_t **head)
 		j++;
 	}
 	j--;
-	k = j / 2;
-	while (i < k)
+	while (i < j)
 	{
 		if (myarray[i] == myarray[j])
 		{
@@ -34,9 +33,7 @@ int is_palindrome(listint_t **head)
 			j--;
 		}
 		else
-		{
-			return (0);
-		}
+		return (0);
 	}
 	return (1);
 }
