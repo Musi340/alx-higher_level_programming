@@ -6,4 +6,3 @@ for i in range(10):
                 print("89")
             else:
                 print("{0:d}{1:d}, ".format(i, j), end="")
-
