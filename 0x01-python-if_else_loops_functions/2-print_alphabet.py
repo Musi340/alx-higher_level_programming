@@ -3,5 +3,5 @@
 # while i < 123:
 # print("{:c}".format(i), end="")
 # i += 1
-for k in "abcdefghijklmnpqrstuvwxyz":
-    print("{:s}".format(k), end="")
+for k in range(97, 123):
+    print("{:c}".format(k), end="")
