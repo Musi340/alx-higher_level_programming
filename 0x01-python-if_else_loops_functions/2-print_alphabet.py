@@ -4,4 +4,4 @@
 # print("{:c}".format(i), end="")
 # i += 1
 for k in "abcdefghijklmnpqrstuvwxyz":
-    print("{:}".format(k), end="")
+    print("{:s}".format(k), end="")
