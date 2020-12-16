@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for k in range(97, 123):
-    print("{:c}".format(k), end="")
+for k in "abcdefghijklmnopqrstuvwxyz":
+    print("{:}".format(k), end="")
