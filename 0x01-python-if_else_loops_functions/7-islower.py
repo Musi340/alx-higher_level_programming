@@ -6,7 +6,3 @@ def islower(c):
             return True
         i += 1
     return False
-   #for k in "abcdefghijklmnpqrstuvwxyz":
-        #if c == k:
-           #return True
-    #return False
