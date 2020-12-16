@@ -4,7 +4,10 @@ number = random.randint(-10000, 10000)
 value = number
 if value < 0:
     value *= -1
-k = value % 10
+    p = value % 10
+    k = p * -1
+else:
+    k = value % 10
 if k < 6 and k != 0:
     print("Last digit of {:} is {:} ".format(number, k), end="")
     print("and is less than 6 and not 0")
