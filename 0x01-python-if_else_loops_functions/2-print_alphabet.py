@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-i = 97
-while i < 123:
-    print("{:c}".format(i), end="")
-    i += 1
-#for k in "abcdefghijklmnpqrstuvwxyz":
-    #print("{:}".format(k), end="")
+# i = 97
+# while i < 123:
+# print("{:c}".format(i), end="")
+# i += 1
+for k in "abcdefghijklmnpqrstuvwxyz":
+    print("{:}".format(k), end="")
