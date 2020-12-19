@@ -11,5 +11,3 @@ def update_dictionary(a_dictionary, key, value):
             if i == key:
                 a_dictionary[i] = value
     return a_dictionary
-        
-        
