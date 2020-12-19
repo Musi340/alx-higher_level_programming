@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     if type(roman_string) != str:
-        return None
+        return 0
     if not roman_string:
-        return None
+        return 0
     mylist1 = [1, 5, 10, 50, 100, 500]
     mylist2 = ['I', 'V', 'X', 'L', 'C', 'D']
     mylist3 = []
