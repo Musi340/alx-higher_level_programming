@@ -1,2 +1,2 @@
--- full description of tables.
-SHOW COLUMNS FROM first_table;
+-- full description of table.
+EXEC SP_HELP first_table;
